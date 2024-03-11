@@ -1,5 +1,17 @@
-*{
-    background-color: black;
-    color: rgb(155, 221, 89);
+.container{
+    background: linear-gradient(120deg,#114165, #CFD1D2);
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #D9D9D9;
+    color: black;
+}
+
+h2.name{
+    background-color: #00A58B;
+}
+.content{
+    background-color: #D8E6A8;
 }
