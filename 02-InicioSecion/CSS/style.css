@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/cafe.jfif);
+    background-size: cover;
+    color: rgb(41, 238, 178);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.userlogin{
+    background-color: #f0f0f0;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15 px solid rgb(156, 234, 16);
+    margin-top: 10%;
+}
+.title{
+    font-size: 28px;
+    font-family: 'Lucida Sans';
+}
+.passwordlogin{
+    background-color: #f0f0f0;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15 px solid rgb(156, 234, 16);
+    margin-top: 10%;
+}
+
+.userid{
+    margin-left: 50px;
+    margin-right: 5px;
+    padding-left: 5px;
+    float: left;
+    height: 25px;
+    width: 300px;
+    border: solid 2px #09c222;
+    border-radius: 10px;
+    justify-content: center;
+}
