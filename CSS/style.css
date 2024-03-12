@@ -1,15 +1,19 @@
+.container{
+    background-size: cover;
+}
 header{
     display: flex;
     width: 100%;
-    height: 5rem;
+    height: 45px;
     align-items: center;
     background-color: #FC4748;  
 }
 
 body{
     background-color: #2B2A2A;
-    color: white;
+    color: white; 
 }
+
 aside{
     display: flex;
     width: 30%;
@@ -18,6 +22,7 @@ aside{
     float: right;
     background-color: #FEB85F;
 }
+
 article{
     display: flex;
     width: 60%;
@@ -25,7 +30,7 @@ article{
     position: relative;
     align-items: center;
     justify-content: space-around;
-    
+
     background-color: #557996;
 }
 
