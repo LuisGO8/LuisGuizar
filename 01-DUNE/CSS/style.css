@@ -25,6 +25,8 @@ section{
 
 article{
     display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 60%;
     height: 55rem;
     margin: 40px 40px 40px 40px;
@@ -32,8 +34,20 @@ article{
     color: white;
 }
 
+.autor{
+    display: flex;
+    width: 25%;
+    height: 30%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background: #a25410b9;
+}
+
 aside{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30%;
     height: 55rem;
     margin: 40px 40px 40px 40px;

@@ -1,43 +1,105 @@
-.container{
-    background-size: cover;
-}
-header{
-    display: flex;
-    width: 100%;
-    height: 45px;
-    align-items: center;
-    background-color: #FC4748;  
+*{
+    margin: 0%;
+    padding: 0%;
 }
 
 body{
-    background-color: #2B2A2A;
-    color: white; 
+    background: #2B2A2A;
+    color: white;
 }
 
-aside{
+header{
     display: flex;
-    width: 30%;
-    height: 35rem;
-    position: relative;
-    float: right;
-    background-color: #FEB85F;
+    align-items: center;
+    width: 98%;
+    height: 10rem;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #FC4748;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
 }
 
 article{
     display: flex;
-    width: 60%;
-    height: 35rem;
-    position: relative;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    width: 65%;
+    height: 45rem;
+    margin: 20px 20px 20px 20px ;
+    border-radius: 10px;
+    background: #557996;
+}
 
-    background-color: #557996;
+article h3{
+    margin: 20px 20px 20px ;
+}
+
+/*Section*/
+article section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 30rem;
+}
+
+
+.Descripcion{
+    width: 400px;
+    height: 600px;
+    border-radius: 7px;
+    margin: 20px 20px 20px 20px;
+    margin-left: 100px;
+    background: #D9D9D9;
+    color: black;
+}
+
+.content{
+    width: 400px;
+    height: 600px;
+    border-radius: 7px;
+    margin: 20px 20px 20px 20px;
+    margin-left: 100px;
+    background: #D9D9D9;
+    color: black;
+}
+
+.content ul{
+    list-style: none;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    margin: 20px 20px 20px 20px ;
+    border-radius: 10px;
+    background: #FEB85F;
+}
+
+.PHomer{
+    width: 300px;
+    height: 400px;
+    margin-left: 150px;
+    margin: auto;
 }
 
 footer{
     display: flex;
+    align-items: center;
     width: 100%;
-    height: 4rem;
-    background-color: #D9D9D9;
-    color: black
+    height: 6rem;
+    background: #D9D9D9;
+}
+
+footer a{
+    text-decoration: none;
 }
