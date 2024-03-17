@@ -34,16 +34,6 @@ article{
     color: white;
 }
 
-.autor{
-    display: flex;
-    width: 25%;
-    height: 30%;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    background: #a25410b9;
-}
-
 aside{
     display: flex;
     align-items: center;
@@ -63,4 +53,55 @@ footer{
     height: 4rem;
     background: rgba(0, 0, 0, 0.477);
     color: white;
+}
+
+
+
+/*Contenedores*/
+div.tarjeta{
+    width: 300px;
+    height: 130;
+    transition: all .3s ease;
+}
+
+div.tarjeta img:first-child{
+    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+}
+
+div.tarjeta img:last-child{
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: .3s ease;
+    opacity: 0;
+}
+
+div.tarjeta:hover{
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);    
+}
+
+div.tarjeta::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent 10%, rgba(0,0,0,0.5) 50%, rgba(0,0,0)95%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+div.tarejta:hover::before{
+    opacity: 1;
+}
+div.tarjeta:hover img:last-child{
+    opacity: 1;
+    transform: translateY(10%);
 }
