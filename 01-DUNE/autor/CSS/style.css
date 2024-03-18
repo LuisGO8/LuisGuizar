@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Arial';
+}
+
+body{
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.477);;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav a{
+    position: relative;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+header nav a:hover{
+    position: relative;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: #e2bf22;
+    font-weight: 500;    
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: white;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 40rem;
+    margin: 40px 40px 40px 40px;
+    background: #f3bb80ab;
+    color: white;
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 40rem;
+    margin: 40px 40px 40px 40px;
+    background: #f3bb80ab;
+    color: white;
+}
+
+footer{
+    display: flex;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.477);;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
