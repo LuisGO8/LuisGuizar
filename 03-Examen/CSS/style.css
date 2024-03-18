@@ -6,6 +6,7 @@
 header{
     display: flex;
     position: fixed;
+    height: 4rem;
     top: 0;
     width: 100%;
     background: black;
@@ -35,7 +36,15 @@ section{
 }
 
 h3{
+    color: black;
     text-transform: uppercase;
+}
+
+section .Historia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 section .Empresas{
@@ -78,21 +87,50 @@ div .giant{
     border-radius: 10px;
 }
 
-footer{
+div .Murbana{
     display: flex;
-    top: 0;
-    width: 100%;
-    height: 2rem;
-    background: black;
-    color: white;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    background: #4f555f9d;
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
 }
-
-.CCarretera img{
-    width: 200px;
+div .Mmontaña{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    background: #4f555f9d;
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
 }
-
+div .Melectrica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    background: #4f555f9d;
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
+}
+div .Mniño{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    background: #4f555f9d;
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
+}
 
 div .CCarretera{
     display: flex;
@@ -137,4 +175,15 @@ div .CCros{
     width: 100%;
     height: 20rem;
     border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 2rem;
+    background: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
 }
