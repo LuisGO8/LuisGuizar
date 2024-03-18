@@ -20,27 +20,30 @@ header a{
     margin: 10px 10px 10px 10px;
 }
 
+header a:hover{
+    color: red;
+}
+
 section{
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-weight: 800;
     background: var(--crl);
     color: white;
 }
 
-footer{
+h3{
+    text-transform: uppercase;
+}
+
+section .Empresas{
     display: flex;
-    top: 0;
-    width: 100%;
-    height: 2rem;
-    background: black;
-    color: white;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
+
 div .specialized{
     display: flex;
     flex-direction: column;
@@ -64,6 +67,67 @@ div .trek{
     border-radius: 10px;
 }
 div .giant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    background: #23559a9d;
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 2rem;
+    background: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.CCarretera img{
+    width: 200px;
+}
+
+
+div .CCarretera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    background: #23559a9d;
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
+}
+div .CPista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    background: #23559a9d;
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
+}
+div .CMontaña{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    background: #23559a9d;
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
+}
+div .CCros{
     display: flex;
     flex-direction: column;
     align-items: center;
