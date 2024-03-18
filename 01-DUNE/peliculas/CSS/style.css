@@ -9,20 +9,16 @@ h1{
 
 p{
     font-family: 'Arial';
-    font-size: 10px;
 }
 
 body{
     background-image: url(../img/fondo.png);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
-.imgL{
-    background-image: url(../img/libros.jpg);
-    background-size: cover;
+img{
     width: 300px;
-    height: 300px;
+    height: 200px;
 }
 
 header{
@@ -90,8 +86,4 @@ footer{
     color: white;
     justify-content: space-around;
     align-items: center;
-}
-
-img{
-    width: 80px;
 }
