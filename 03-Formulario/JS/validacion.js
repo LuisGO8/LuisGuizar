@@ -62,7 +62,7 @@ function validar(formulario){
     }
 //Funcion para validar el correo es necesario contar con una expresion regular porque tenemos un formato el cual es:
 //texto.texto@texto.texto
-    var b =/^[^@\s]+[^@\.\s]+(/.[^@\.\s]+$)/;
+    var b =/^[^@\s]+[^@\.\s]+(\.[^@\.\s]+)+$/;
     var txt = formulario.correo.value;
 
     alert("Email" + (b.test(txt)?"":"no")+ " valido")//? operador ternario (if corto)
