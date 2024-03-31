@@ -38,7 +38,7 @@ function validar(formulario){
     }
     
 //EDAD (Numeros)
-    var abcOK = "q1234567890"
+    var abcOK = "1234567890"
     var checkStr = formulario.edad.value;
     alert(checkStr);
     
