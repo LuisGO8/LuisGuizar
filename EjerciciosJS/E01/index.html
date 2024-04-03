@@ -1,0 +1,45 @@
+<!--
+    Suponga que un individuo desea invertir su capital en un banco y desea saber cuánto dinero ganara después de un mes si el banco paga a razón de 2% mensual 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital</title>
+    <script src="./JS/op.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">
+                <div class="dHeader">Regresar</div>
+            </a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <form action="" id="capital">
+                <div class="texto">
+                    <h1>Invierte tu Capital</h1>
+                    <p>Pagamos a una razon del 2% mensual</p>
+                </div>
+                <br>
+                <div class="div-input">
+                    <input type="number" id="dinero" placeholder="Dinero" class="dinero">
+                    <br>
+                    <input type="number" id="mes" placeholder="meses" class="mes">
+                </div>
+                <br>
+                <div class="botones">
+                    <button type="button" onclick="calcular()">Calcular</button>
+                    <button onclick="limpiar();">Limpiar</button>
+                </div>
+                <p>Genera un interés  de : $<span id="imes"></span> mesuales</p>
+                <p>Total a ganar: $<span id="resultado"></span> en <span id="rmeses"></span><span id="nrmeses"></span></p>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>

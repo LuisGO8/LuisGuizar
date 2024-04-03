@@ -1,0 +1,43 @@
+<!--
+    Un alumno desea saber cuál será su calificación final en la materia de Algoritmos. Dicha calificación se compone de los siguientes porcentajes:
+    55 % del promedio de sus tres calificaciones parciales
+    30 % de las calificación de su examen final
+    15 % de la calificación de un trabajo final 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./JS/funciones.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="../index.html">Regresar</a>
+            </nav>
+        </header>
+        <form action="" id="cFinal">
+            <h1>Calificación final</h1>
+            <label>Calificaciones por semestre: </label>
+            <input type="number" id="primer-parcial" placeholder="primer parcial">        
+            <input type="number" id="segundo-parcial" placeholder="segundo parcial">        
+            <input type="number" id="tercer-parcial" placeholder="tercer parcial">
+            <br><br>
+            <label>Calificación del examen final</label>
+            <input type="number" id="examen-final" placeholder="Examen final">
+            <br><br>
+            <label>Calificación del trabajo</label>
+            <input type="number" id="calificacion-trabajo" placeholder="Calificacion del trabjo">
+            <br><br>
+            <button type="button" onclick="calcular()">Calcular</button>
+            <button onclick="limpiar()">Limpiar</button>
+            <p>Su calificacón es: <span id="caliFinal"></span></p>
+        </form>
+    </div>
+</body>
+</html>
