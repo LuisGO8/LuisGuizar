@@ -11,7 +11,7 @@ function calcular(){
         return;
     }
 
-    if(pMujeres>0 && pHombres>0){
+    if(pMujeres>=0 && pHombres>=0){
         document.getElementById('porcentaje-mujeres').innerHTML = (pMujeres*100)/tGrupo + '%';
         document.getElementById('porcentaje-hombres').innerHTML = (pHombres*100)/tGrupo + '%';
     }else{
@@ -19,3 +19,10 @@ function calcular(){
         return false;
     }
 }
+
+document.addEventListener("keypress", function(event){
+    if (event.key === "Enter") {
+        event.preventDefault();
+        calcular();
+    }
+})

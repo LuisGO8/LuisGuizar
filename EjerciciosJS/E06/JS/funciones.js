@@ -13,3 +13,10 @@ function calcular(){
 
     document.getElementById('edad').innerHTML = 2024 - añoN + ' años';
 }
+
+document.addEventListener("keypress", function(event){
+    if (event.key === "Enter") {
+        event.preventDefault();
+        calcular();
+    }
+})

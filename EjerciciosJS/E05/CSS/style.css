@@ -1,9 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Arial";
+    font-family: 'Arial';
 }
-/*Header*/
+
 header{
     display: flex;
     justify-content:left;
@@ -34,10 +34,8 @@ a{
     text-decoration: none;
 }
 
-
-/*Del formulario*/
 body{
-    background: #009EE5;
+    background: #FF5600;
 }
 
 .containerf{
@@ -46,21 +44,14 @@ body{
 
 .content{
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #05266cc3;
+    align-items: center;
+    background-color: #FF9D1F;
     color: white;
-    width: 400px;
+    width: 650px;
     height: 400px;
     margin: auto;
     border-radius: 15px;
-}
-
-.texto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 h1{
@@ -68,32 +59,34 @@ h1{
     font-size: 30px;
 }
 
-.div-input{
+.input-i{
+    width: 200px;
+    height: 25px;
+}
+
+.p-final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 70px;
+    background-color: #ffcb86c7;
+    border-radius: 5px;
+    padding-left: 30px;
+    margin: auto;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+}
+
+.info{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: auto;
-}
-
-.dinero{
-    width: 300px;
-    height: 30px;
-}
-.mes{
-    width: 300px;
-    height: 30px;
-}
-
-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 40px;
-    margin: 20px;
-}
-.botones{
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    
 }

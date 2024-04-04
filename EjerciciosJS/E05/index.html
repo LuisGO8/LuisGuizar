@@ -9,27 +9,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./JS/funciones.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
-                <a href="../index.html">Regresar</a>
+                <a href="../index.html">
+                    <div class="dHeader">Regresar</div>
+                </a>
             </nav>
         </header>
-        <form action="" id="cPorcentajes">
-            <h1>Porcentajes de Hombres y Mujeres</h1>
-            <label>Total de mujeres: </label>
-            <input type="number" id="total-mujeres" placeholder="Total de Mujes">
-            <br><br>
-            <label>Total de hombres: </label>
-            <input type="number" id="total-hombres" placeholder="Total de Hombres">
-            <br><br>
-            <button type="button" onclick="calcular()">Calcular</button>
-            <button type="button" onclick="limpiar()">Limpiar</button>
-            <p>El porcentaje de mujeres es: <span id="porcentaje-mujeres"></span></p>
-            <p>El porcentaje de hombres es: <span id="porcentaje-hombres"></span></p>
-        </form>
+        <div class="containerf">
+            <div class="content">
+                <form action="" id="cPorcentajes">
+                    <div class="info">
+                        <h1>Porcentajes de Hombres y Mujeres</h1>
+                        <br>
+                        <label>Total de mujeres: </label>
+                        <input type="number" id="total-mujeres" placeholder="Total de Mujes" class="input-i">
+                        <br>
+                        <label>Total de hombres: </label>
+                        <input type="number" id="total-hombres" placeholder="Total de Hombres" class="input-i">
+                        <br>
+                        <button type="button" onclick="calcular()">Calcular</button>
+                    </div>
+                    <div class="p-final">
+                        <p>El porcentaje de mujeres es: <span id="porcentaje-mujeres"></span></p>
+                        <p>El porcentaje de hombres es: <span id="porcentaje-hombres"></span></p>
+                    </div>
+                    <button type="button" onclick="limpiar()">Limpiar</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

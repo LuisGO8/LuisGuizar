@@ -8,9 +8,21 @@ function calcular(){
     
 
     if (isNaN(precioO)) {
-        alert("Debes de ingresar datos válidos (números)" );
+        alert("Debes de ingresar datos numéricos." );
         return;
     }
 
-    document.getElementById('total').innerHTML = precioO - precioO*0.15;
+    if(precioO >0){
+        document.getElementById('total').innerHTML = precioO - precioO*0.15;
+    }else{
+        alert('No se admiten valores negativos')
+    }
+
 }
+
+document.addEventListener("keypress", function(event){
+    if (event.key === "Enter") {
+        event.preventDefault();
+        calcular();
+    }
+})

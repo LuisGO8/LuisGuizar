@@ -11,35 +11,37 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../index.html">
-                <div class="dHeader">Regresar</div>
-            </a>
-        </nav>
-    </header>
     <div class="container">
-        <div class="content">
-            <form action="" id="capital">
-                <div class="texto">
-                    <h1>Invierte tu Capital</h1>
-                    <p>Pagamos a una razon del 2% mensual</p>
-                </div>
-                <br>
-                <div class="div-input">
-                    <input type="number" id="dinero" placeholder="Dinero" class="dinero">
+        <header>
+            <nav>
+                <a href="../index.html">
+                    <div class="dHeader">Regresar</div>
+                </a>
+            </nav>
+        </header>
+        <div class="containerf">
+            <div class="content">
+                <form action="" id="capital">
+                    <div class="texto">
+                        <h1>Invierte tu Capital</h1>
+                        <p>Pagamos a una razon del 2% mensual</p>
+                    </div>
                     <br>
-                    <input type="number" id="mes" placeholder="meses" class="mes">
-                </div>
-                <br>
-                <div class="botones">
-                    <button type="button" onclick="calcular()">Calcular</button>
-                    <button onclick="limpiar();">Limpiar</button>
-                </div>
-                <p>Genera un interés  de : $<span id="imes"></span> mesuales</p>
-                <p>Total a ganar: $<span id="resultado"></span> en <span id="rmeses"></span><span id="nrmeses"></span></p>
-            </form>
+                    <div class="div-input">
+                        <input type="number" id="dinero" placeholder="Dinero" class="dinero">
+                        <br>
+                        <input type="number" id="mes" placeholder="meses" class="mes">
+                    </div>
+                    <br>
+                    <div class="botones">
+                        <button type="button" onclick="calcular()">Calcular</button>
+                        <button onclick="limpiar();">Limpiar</button>
+                    </div>
+                    <p>Genera un interés  de : $<span id="imes"></span> mesuales</p>
+                    <p>Total a ganar: $<span id="resultado"></span> en <span id="rmeses"></span><span id="nrmeses"></span></p>
+                </form>
+            </div>
         </div>
-    </div>    
+    </div>
 </body>
 </html>

@@ -13,31 +13,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./JS/funciones.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
-                <a href="../index.html">Regresar</a>
+                <a href="../index.html">
+                    <div class="dHeader">Regresar</div>
+                </a>
             </nav>
         </header>
-        <form action="" id="cFinal">
-            <h1>Calificación final</h1>
-            <label>Calificaciones por semestre: </label>
-            <input type="number" id="primer-parcial" placeholder="primer parcial">        
-            <input type="number" id="segundo-parcial" placeholder="segundo parcial">        
-            <input type="number" id="tercer-parcial" placeholder="tercer parcial">
-            <br><br>
-            <label>Calificación del examen final</label>
-            <input type="number" id="examen-final" placeholder="Examen final">
-            <br><br>
-            <label>Calificación del trabajo</label>
-            <input type="number" id="calificacion-trabajo" placeholder="Calificacion del trabjo">
-            <br><br>
-            <button type="button" onclick="calcular()">Calcular</button>
-            <button onclick="limpiar()">Limpiar</button>
-            <p>Su calificacón es: <span id="caliFinal"></span></p>
-        </form>
+        <div class="containerf">
+            <div class="content">
+                <form action="" id="cFinal">
+                    <h1>Calificación final</h1>
+                    <label>Calificaciones por semestre: </label>
+                    <br>
+                    <input type="number" id="primer-parcial" placeholder="primer parcial" class="input-i">        
+                    <br><br>
+                    <input type="number" id="segundo-parcial" placeholder="segundo parcial" class="input-i">        
+                    <br><br>
+                    <input type="number" id="tercer-parcial" placeholder="tercer parcial" class="input-i">
+                    <br><br>
+                    <label>Calificación del examen final: </label>
+                    <input type="number" id="examen-final" placeholder="Examen final" class="input-i">
+                    <br><br>
+                    <label>Calificación del trabajo: </label>
+                    <input type="number" id="calificacion-trabajo" placeholder="Calificacion del trabjo" class="input-i">
+                    <br><br>
+                    <button type="button" onclick="calcular()">Calcular</button>
+                    <div class="calif-final">
+                        <p>Su calificacón es: <span id="caliFinal"></span></p>
+                    </div>
+                    <button onclick="limpiar()">Limpiar</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

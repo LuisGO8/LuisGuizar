@@ -9,21 +9,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descuento</title>
     <script src="./JS/funciones.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
-                <a href="../index.html">Regresar</a>
+                <a href="../index.html">
+                    <div class="dHeader">Regresar</div>
+                </a>
             </nav>
         </header>
-        <form action="" id="cTienda">
-            <h1>Descuento tienda</h1>
-            <input type="number" id="precio-original" placeholder="Precio Original">
-            <button type="button" onclick="calcular()">Calcular</button>
-            <button onclick="limpiar()">Limpiar</button>
-            <p>Precio Final de la compra: <span id="total"></span></p>
-        </form>
+        <div class="containerf">
+            <div class="content">
+                <form action="" id="cTienda">
+                    <h1>Descuento tienda</h1>
+                    <br>
+                    <p>Descuentos del 15% en todos nuestros productos</p>
+                    <br>
+                    <input type="number" id="precio-original" placeholder="Precio Original" class="input-i">
+                    <br>
+                    <button type="button" onclick="calcular()">Calcular</button>
+                    <div class="r">
+                        <p>Precio Final de la compra: $<span id="total"></span></p>
+                    </div>
+                    <button onclick="limpiar()">Limpiar</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
