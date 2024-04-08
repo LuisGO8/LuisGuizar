@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./JS/validacion.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <div class="container">
@@ -15,14 +16,18 @@
                     Significa que el cliente realiza una petición (request) y el servidor debe atender mediante una respuesta (response).
                     Los metos mas comunes son:
                     <br><br>
-                    GET
+                    <span>GET</span>
+                    <br>
                     <h1>
                         Este método se encarga de enviar la información del formulario por medio de la salida o url estándar del navegador esto propicia que pueda existir inyecciones de código realizando violaciones a la seguridad del sistema
                     </h1>
-                    POST:
+                    <br>
+                    <span>POST</span>
+                    <br>
                     <h1>
                         Este método se encarga de enviar la información por el método estándar, pero mediante un ocultamiento, esto significa que no es visible para el usuario: Lo que nos ofrece un mayor grado de seguridad en el manejo del sistema
                     </h1>
+                    <br><br>
                     Get solo se usa para operaciones de lectura
                     Post sirve para cambiar la información de un recurso por parte del servidor. (Insertar un registro)
                     Delete sirve para eliminar un recurso en específico,
@@ -30,21 +35,18 @@
                     Head regresa el código de respuesta y cualquier cabecera HTTP asociada
                 </p>
                 <br>
-                <label for="">Nombre :</label>
-                <br>
-                <input type="text" name="nombre" id="nombre">
-                <br>
-                <label for="">Edad :</label>
-                <br>
-                <input type="number" name="edad" id="edad">
-                <br>
-                <label for="">Correo :</label>
-                <br>
-                <input type="email" name="correo" id="correo">
-                <br>
-                <input type="submit" name="enviar" value="Enviar Registro">
-                <br>
-                <input type="reset" name="borrar" value="Borrar datos">
+                <div class="formulario-i">
+                    <label>Nombre :</label>
+
+                    <input type="text" name="nombre" id="nombre" class="input-i">
+                    <label for="">Edad :</label>
+                    <input type="number" name="edad" id="edad" class="input-i">
+                    <label>Correo :</label>
+                    <input type="email" name="correo" id="correo" class="input-i">
+                    <input type="submit" name="enviar" value="Enviar Registro" class="input-i">
+                    <input type="reset" name="borrar" value="Borrar datos" class="input-i">
+                </div>
+                
             </form>
         </div>
     </div>  

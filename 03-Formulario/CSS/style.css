@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #F1D4AF;
+}
+
+.formulario-i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 230px;
+    height: 250px;
+    background: #C5E0DC;
+    border-radius: 10px;
+}
+
+.input-i{
+    margin: 4px;
+}
+
+h1{
+    font-size: 15px;
+}
+
+span{
+    color: red;
+    font-size: 20px;
+}
