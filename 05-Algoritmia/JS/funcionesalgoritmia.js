@@ -1,14 +1,20 @@
+function evitarE(){
+    alert("Porfavor llena los campos")
+}
+
+
+
+
 function problema1() {
     var p1_input = document.querySelector('#p1-input').value.trim();
-    
-    // Verificar si el input está vacío
-    if (p1_input === '') {
-        document.querySelector('#p1-output').textContent = 'Por favor, ingresa algunas palabras.';
-        return;
+
+    if(p1_input.trim()==""){
+        event.preventDefault();
+        alert("Porfavor complete los campos")
     }
-    
+
     if (/[0-9]/.test(p1_input)) {
-        alert('Por favor, ingresa solo letras en el campo.');
+        alert('Unicamente letras');
         return;
     }
     
@@ -25,6 +31,7 @@ function problema1() {
 
 
 
+
 function problema2(){
     var p2_x1 = document.querySelector('#p2-x1').value;
     var p2_x2 = document.querySelector('#p2-x2').value;
@@ -37,6 +44,12 @@ function problema2(){
     var p2_y3 = document.querySelector('#p2-y3').value;
     var p2_y4 = document.querySelector('#p2-y4').value;
     var p2_y5 = document.querySelector('#p2-y5').value;
+
+    var numeros = /^[0-9]+$/;
+    if(!numeros.test(p2_x1,p2_x2,p2_x3,p2_x4,p2_x5,p2_y1,p2_y2,p2_y3,p2_y4,p2_y5)){
+        event.preventDefault();
+        alert("Por favor ingrese numeros")
+    }
 
     var v1 = [p2_x1, p2_x2, p2_x3, p2_x4, p2_x5];
     var v2 = [p2_y1, p2_y2, p2_y3, p2_y4, p2_y5];
@@ -60,16 +73,19 @@ function problema2(){
     document.querySelector('#p2-output').textContent = 'Producto Escalar Minimo: ' + p2_producto;
 }
 
+
+
+
 function problema3() {
     var p3_input = document.querySelector('#p3-input').value.trim();
     
-    if (p3_input === '') {
-        document.querySelector('#p3-output').textContent = 'Por favor, ingresa algunas palabras.';
-        return;
+    if(p3_input.trim()==""){
+        event.preventDefault();
+        alert("Porfavor complete los campos")
     }
-    
+
     if (/[0-9]/.test(p3_input)) {
-        alert('Por favor, ingresa solo letras en el campo.');
+        alert('Unicamente letras');
         return;
     }
 
@@ -90,3 +106,10 @@ function problema3() {
 
     document.querySelector('#p3-output').textContent = `${palabraMaxCaracteresUnicos} = ${maxCaracteresUnicos} (${caracteresUnicosPalabraMax})`;
 }
+
+document.addEventListener("keypress", function(event){
+    if (event.key === "Enter") {
+        event.preventDefault();
+        evitarE();
+    }
+})
