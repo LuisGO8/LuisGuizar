@@ -3,51 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Evidencias</title>
+    <title>GitHub</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-" crossorigin="anonymous" />
+    <script>
+        // JavaScript para cerrar el menú al hacer clic en un enlace
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll(".navigation a");
+            links.forEach(function(link) {
+                link.addEventListener("click", function() {
+                    document.getElementById("btn-nav").checked = false;
+                });
+            });
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <h1>Portafolio de Evidencias para PNT del Cecyt 9 </h1>
-    </header>
-    <main>
-        <article>
-            <h3 class="h3P">Trabajos</h2>
-            <section>
-                <div class="Descripcion">
-                    <h3>Descripción de Actividades</h3>
-                </div>
-                <div class="content">
-                    <h3>Enlaces</h3>
-                    <ul>
-                        <li><a href="https://www.figma.com/file/FMP8U9SeqGpbKT5gXbJm0R/Untitled?type=design&node-id=0%3A1&mode=design&t=n1TNTQxTzxjLvOTS-1">Figma DUNE</a></li>
-                        <li><a href="./01-DUNE/index.html" target="_blank">P1.DUNE</a></li>
-                        <li><a href="./02-InicioSecion/index.html" target="_blank">P2.Inicio de seción</a></li>
-                        <li><a href="https://www.figma.com/file/ctcYd3HZCR5U4nbxGcin4s/Untitled?type=design&mode=design&t=n1TNTQxTzxjLvOTS-1">Figma Examen</a></li>
-                        <li><a href="./Examen01/index.html" target="_blank">Bicicletas(Examen)</a></li>
-                        <li><a href="./03-Formulario/index.html" target="_blank">P3.Formulario</a></li>
-                        <li><a href="./EjerciciosJS/index.html" target="_blank">Ejercicios JS</a></li>
-                        <li><a href="./04-PSolucion/ejercicio01.html" target="_blank">Solucion a ejercicio</a></li>
-                        <li><a href="./05-Algoritmia/algoritmia.html" target="_blank">Ejercicios Algoritmia</a></li>
-                    </ul>
-                </div>
-            </section>
-        </article>
-        <aside>
-            <img src="./img/PHomer.jpg" class="PHomer">
-            <div class="card">
-                <div class="face front">
-                    <h2 class="name">Guízar Ortega José Luis</h2>
-                </div>
-                <div class="face back">
-                    <p>Edad 17 años</p>
-                    <p>Alumno del CECyT 9</p>
-                </div>
+    <!--Header-->
+    <header class="main-header">
+        <label for="btn-nav" class="btn-nav"><i class="fas fa-user"></i></label>
+        <input type="checkbox" id="btn-nav">
+        <nav>
+            <div class="img-personal">
+                <img src="img.jpg" alt="Imagen">
             </div>
-        </aside>
-    </main>
-    <footer>
-        <a href="mailto:jguizaro2200@alumno.ipn.mx">Correo Electrónico</a>
-    </footer>    
+
+          <ul class="navigation">
+            <li>
+                <div class="i-personal">
+                    <h4>Información personal</h4>
+                    <br>
+                    <p>Guízar Ortega José Luis</p>
+                    <p>17 años</p>
+                    <p>Estudiante programación</p>
+                    <p>CECYT 9 </p>
+                </div>
+            </li>
+            <li><a href=""> Correo <i class="fas fa-envelope"></i></a></li>
+            <li><a href="" target="_blank"> Youtube <i class="fab fa-youtube"></i></a></li>
+            <li><a href=""> GitHub <i class="fab fa-github"></i></a></li>
+          </ul>
+        </nav>
+        
+      </header>
+    <div class="Actividades" id="Actividades">
+
+        <div class="Act">
+            <a href="#">
+                <div class="Actividad">
+                    <h3>Figma DUNE</h3>
+                    <p>Enlace al figma</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+            <a href="#">
+                <div class="Actividad">
+                    <h3>P1. DUNE</h3>
+                    <p>HTML y CSS de la página de DUNE</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+            <a href="#">
+                <div class="Actividad">
+                    <h3>P2. Inicio de sesion</h3>
+                    <p>Descripcion</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+            <a href="#">
+                <div class="Actividad">
+                    <h3>Figma Exámen</h3>
+                    <p>Enlace al Figma</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+        </div>
+
+        <div class="Act">
+            <a href="#">
+                <div class="Actividad">
+                    <h3>Biciletas</h3>
+                    <p>HTML y CSS del exámen</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+            <a href="#">
+                <div class="Actividad">
+                    <h3>P3. Formulario</h3>
+                    <p>Descripcion</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+            <a href="#">
+                <div class="Actividad">
+                    <h3>Ejercicios JS</h3>
+                    <p>Descripcion</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+            <a href="#">
+                <div class="Actividad">
+                    <h3>Solución de ejercicio</h3>
+                    <p>Descripcion</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+        </div>
+
+        <div class="Act">
+            <a href="#">
+                <div class="Actividad">
+                    <h3>Ejercicios de Algoritmia</h3>
+                    <p>HTML y CSS del exámen</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+            <a href="#">
+                <div class="Actividad">
+                    <h3>06- JS intermedio</h3>
+                    <p>Descripcion</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+            <a href="#">
+                <div class="Actividad">
+                    <h3>07-Rompecabezas</h3>
+                    <p>Descripcion</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+            <a href="#">
+                <div class="Actividad">
+                    <h3>08-NODE</h3>
+                    <p>Descripcion</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+        </div>
+
+        <div class="Act">
+            <a href="#">
+                <div class="Actividad">
+                    <h3>09-Express</h3>
+                    <p>HTML y CSS del exámen</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+            <!--
+            <a href="#">
+                <div class="Actividad">
+                    <h3>P3. Formulario</h3>
+                    <p>Descripcion</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+            <a href="#">
+                <div class="Actividad">
+                    <h3>Ejercicios JS</h3>
+                    <p>Descripcion</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>
+            <a href="#">
+                <div class="Actividad">
+                    <h3>Solución de ejercicio</h3>
+                    <p>Descripcion</p>
+                    <img src="a1.png" alt="img-Act" style="width: 120px; height: 80px;">
+                </div>
+            </a>-->
+        </div>
+    
+    </div>
 </body>
 </html>
