@@ -1,0 +1,54 @@
+npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (08-node)
+version: (1.0.0)
+description: "Ejemplo con NODE"
+entry point: (index.js) app.js
+test command:
+git repository:
+keywords: "Tu primer programa con node"
+author: "Luis GUizar"
+license: (ISC)
+About to write to F:\08-NODE\package.json:
+
+{
+  "name": "08-node",
+  "version": "1.0.0",
+  "description": "\"Ejemplo con NODE\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\"Tu",
+    "primer",
+    "programa",
+    "con",
+    "node\""
+  ],
+  "author": "\"Luis GUizar\"",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+PS F:\08-NODE> node app.js
+Ejecutamos el servidor en puerto 3000
+Se hizo una petición
+Se hizo una petición
+PS F:\08-NODE> npm install nodemon -g
+
+added 33 packages in 2s
+
+4 packages are looking for funding
+  run `npm fund` for details
+PS F:\08-NODE> nodemon app.js
