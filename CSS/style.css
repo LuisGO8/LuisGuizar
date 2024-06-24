@@ -118,7 +118,7 @@
 
   /*Div que contiene los div de las actividades*/
   .Act{
-    margin-left: 300px;
+    margin-left: 330px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -126,6 +126,7 @@
 
   .Act a{
     text-decoration: none;
+    color: black;
   }
 
   
